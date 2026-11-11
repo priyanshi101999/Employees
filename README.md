@@ -14,13 +14,13 @@ The `employees` table is created by the Alembic migration (see Backend).
 
     cd backend
     python -m venv venv
-    source venv/bin/activate        # Windows: venv\Scripts\activate
+    venv\Scripts\activate
     pip install -r requirements.txt
     cp .env.example .env            # update DATABASE_URL if needed
     alembic upgrade head
     uvicorn main:app --reload
 
-API runs on http://localhost:8000 (docs at /docs).
+API runs on http://localhost:8000.
 
 ## Frontend
 
